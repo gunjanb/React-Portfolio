@@ -1,20 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-
+import { BrowserRouter as Router } from "react-router-dom";
 import Homepage from "./Homepage";
-import Contentpage from "./Contentpage";
 import "./index.css";
 import App from "./App";
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route exact path="/" component={Homepage} />
-      <Route exact path="/main" component={Contentpage} />
-    </Switch>
-  </BrowserRouter>,
+  // <Router>
+  //   <div className="App">
+  //     <Homepage />
+  //     <Routes />
+  //   </div>
+  // </Router>,
+  <App />,
   document.getElementById("root")
 );
 
