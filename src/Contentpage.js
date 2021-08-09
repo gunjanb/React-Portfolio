@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Contentpage() {
-  return <div>Hi</div>;
+  return <div style={{ backgroundColor: "black" }}>Hi</div>;
 }
 
 export default Contentpage;
