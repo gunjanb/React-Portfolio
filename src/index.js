@@ -1,13 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Homepage from "./Homepage";
+import Contentpage from "./Contentpage";
 import "./index.css";
 import App from "./App";
 // import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/" component={Homepage} />
+      <Route exact path="/main" component={Contentpage} />
+    </Switch>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
