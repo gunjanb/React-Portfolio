@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+} from "react-router-dom";
 import Homepage from "./Pages/Homepage";
 import Contentpage from "./Pages/Contentpage";
 import Typewriter from "typewriter-effect";
@@ -15,6 +21,9 @@ function App() {
         </Route>
         <Route path="/content">
           <Contentpage />
+        </Route>
+        <Route>
+          <Redirect to path="/" />
         </Route>
       </Switch>
     </Router>
