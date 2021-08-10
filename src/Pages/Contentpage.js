@@ -1,7 +1,11 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-
+import About from "../components/About";
+import Portfolio from "../components/Portfolio";
+import Resume from "../components/Resume";
+import Contact from "../components/Contact";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./contentpage.css";
 
 function Contentpage() {
@@ -28,6 +32,18 @@ function Contentpage() {
           <div className="content-custom-styles py-3 px-2 rounded hover-shadow">
             {/* navbar */}
             <Navbar />
+            <Route exact path="/content/">
+              <About />
+            </Route>
+            <Route path="/content/portfolio">
+              <Portfolio />
+            </Route>
+            <Route path="/content/resume">
+              <Resume />
+            </Route>
+            <Route path="/content/contact">
+              <Contact />
+            </Route>
           </div>
         </Col>
         {/* <div className="col-3 sidebar">Hi</div>
