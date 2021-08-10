@@ -73,20 +73,20 @@ export default function Sidebar() {
       >
         Email
       </div>
-      <button>
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <IconContext.Provider
-            value={{
-              color: "black",
-              size: "2rem",
-              background: "#7d0909",
-              // padding: "1rem",
-            }}
-          >
-            <FaChevronCircleLeft />
-          </IconContext.Provider>
-        </Link>
-      </button>
+      {/* <button> */}
+      <Link to="/" style={{ textDecoration: "none" }}>
+        <IconContext.Provider
+          value={{
+            color: "black",
+            size: "2rem",
+            background: "#7d0909",
+            // padding: "1rem",
+          }}
+        >
+          <FaChevronCircleLeft />
+        </IconContext.Provider>
+      </Link>
+      {/* </button> */}
     </div>
   );
 }

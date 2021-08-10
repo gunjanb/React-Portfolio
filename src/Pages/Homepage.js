@@ -43,20 +43,20 @@ function Homepage() {
             }}
           />
         </h1>
-        <button>
-          <Link to="/content" style={{ textDecoration: "none" }}>
-            <IconContext.Provider
-              value={{
-                color: "black",
-                size: "2rem",
-                background: "#7d0909",
-                // padding: "1rem",
-              }}
-            >
-              <FaChevronCircleRight />
-            </IconContext.Provider>
-          </Link>
-        </button>
+        {/* <button> */}
+        <Link to="/content" style={{ textDecoration: "none" }}>
+          <IconContext.Provider
+            value={{
+              color: "white",
+              size: "2rem",
+              background: "#7d0909",
+              // padding: "1rem",
+            }}
+          >
+            <FaChevronCircleRight />
+          </IconContext.Provider>
+        </Link>
+        {/* </button> */}
       </div>
 
       <Particles
