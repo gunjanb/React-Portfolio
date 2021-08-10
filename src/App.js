@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Homepage from "./Homepage";
-import Contentpage from "./Contentpage";
+import Homepage from "./Pages/Homepage";
+import Contentpage from "./Pages/Contentpage";
 import Typewriter from "typewriter-effect";
 
 import { FaFastForward } from "react-icons/fa";

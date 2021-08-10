@@ -1,9 +1,10 @@
 import React from "react";
 import Particles from "react-particles-js";
-import { FaFastForward } from "react-icons/fa";
+import { FaFastForward, FaChevronCircleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
+import "./homepage.css";
 
 const styles = {
   color: { backgroundColor: "#7d0909" },
@@ -12,6 +13,7 @@ function Homepage() {
   return (
     <div className="" style={styles.color}>
       <div
+        // styles needed for positioning
         style={{
           position: "absolute",
           display: "flex",
@@ -23,15 +25,17 @@ function Homepage() {
         }}
       >
         <Link to="/"> </Link>
-        <h1 style={{ color: "white" }}>Hi there !!!</h1>
-        <h1 style={{ color: "white" }}>
+        <h1 style={{ color: "white", margin: "2rem", fontSize: "2rem" }}>
+          Hi there !!!
+        </h1>
+        <h1 style={{ color: "white", margin: "2rem", fontSize: "2rem" }}>
           <Typewriter
             options={{
               strings: [
                 "I am",
                 "Gunjan Bhargava",
                 "Full Stack Web Developer",
-                "Lets get started by clicking button",
+                "Let's go",
               ],
               autoStart: true,
               loop: true,
@@ -42,16 +46,24 @@ function Homepage() {
         <button>
           <Link to="/content" style={{ textDecoration: "none" }}>
             <IconContext.Provider
-              value={{ color: "black", size: ".5rem", borderRadius: "0.5rem" }}
+              value={{
+                color: "black",
+                size: "2rem",
+                background: "#7d0909",
+                // padding: "1rem",
+              }}
             >
-              <FaFastForward />
+              <FaChevronCircleRight />
             </IconContext.Provider>
           </Link>
         </button>
       </div>
 
       <Particles
-        height={window.outerHeight}
+        id="particles-js"
+        // to make particle screen 100 %
+        // height={window.outerHeight}
+        height="100vh"
         className="particles-snow"
         params={{
           particles: {

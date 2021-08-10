@@ -1,0 +1,19 @@
+.navbar-item {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.navbar-active {
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 650;
+  border-bottom: 4px solid rgb(109, 18, 18);
+}
+
+.navbar-item:hover {
+  background: -webkit-linear-gradient(#8d2020, #ffc8c8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

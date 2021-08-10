@@ -1,0 +1,7 @@
+.email:hover {
+  transform: scale(1.2);
+}
+
+.email {
+  transition: all 1s linear;
+}
