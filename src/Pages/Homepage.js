@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 import "./homepage.css";
 
 const styles = {
-  color: { backgroundColor: "#7d0909" },
+  // color: { backgroundColor: "#7d0909" },
 };
 function Homepage() {
   return (
@@ -25,24 +25,25 @@ function Homepage() {
         }}
       >
         <Link to="/"> </Link>
-        <h1 style={{ color: "white", margin: "2rem", fontSize: "2rem" }}>
-          Hi there !!!
+        <h1 style={{ color: "black", margin: "2rem", fontSize: "2rem" }}>
+          Hi !!
         </h1>
-        <h1 style={{ color: "white", margin: "2rem", fontSize: "2rem" }}>
+        <h2 style={{ color: "black", margin: "2rem", fontSize: "2rem" }}>
           <Typewriter
             options={{
               strings: [
                 "I am",
                 "Gunjan Bhargava",
-                "Full Stack Web Developer",
-                "Let's go",
+                "an Engineer",
+                "Web Developer",
+                "an Artist",
               ],
               autoStart: true,
               loop: true,
               delay: 200,
             }}
           />
-        </h1>
+        </h2>
         {/* <button> */}
         <Link to="/content" style={{ textDecoration: "none" }}>
           <IconContext.Provider

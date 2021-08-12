@@ -41,10 +41,15 @@ export default function Sidebar() {
         style={styles.imgsize}
         className="sidebar-avatar"
       /> */}
-      <Image src={myimage} roundedCircle style={styles.imgsize} />
       <div className="my-name"> Gunjan Bhargava</div>
-      <div className="title py-2 px-5" style={styles.title}>
+      <Image src={myimage} roundedCircle style={styles.imgsize} />
+
+      {/* <div className="title py-2 px-5" style={styles.title}>
         Web Developer
+      </div> */}
+      <div className="title py-2 px-5">
+        Hi, my name is Gunjan Bhargava and I'm a web developer. Welcome to my
+        personal website!
       </div>
       <div className="resume ">
         <a href={resume} download="resume.pdf" style={styles.atag}>
