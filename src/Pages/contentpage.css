@@ -28,3 +28,23 @@
     margin-bottom: 1rem;
   }
 }
+
+@media (max-width: 1022px) {
+  .row-height {
+    height: unset;
+  }
+}
+
+.content {
+  /* background: linear-gradient(
+    90deg,
+    hsla(0, 100%, 67%, 1) 0%,
+    hsla(0, 100%, 89%, 1) 100%
+  ); */
+
+  background: linear-gradient(
+    90deg,
+    hsla(0, 87%, 79%, 1) 0%,
+    hsla(6, 77%, 85%, 1) 100%
+  );
+}

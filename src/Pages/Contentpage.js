@@ -17,12 +17,14 @@ function Contentpage() {
   return (
     <Container
       fluid
-      className="pt-4 min-vh-100"
-      style={{
-        // background:
-        //   "linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%)",
-        background: "#7d0909",
-      }}
+      className="pt-4 min-vh-100 content"
+      style={
+        {
+          // background:
+          //   "linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%)",
+          // background: "#7d0909",
+        }
+      }
     >
       <Row className="row-height">
         {/* <div className="row m"> */}
