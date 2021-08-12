@@ -22,7 +22,7 @@ export default function Navbar() {
     let currentURL = window.location.href;
     console.log(currentURL);
     if (currentURL.endsWith("/content")) setActive("About");
-    else if (currentURL.endsWith("/content/protfolio")) setActive("Portfolio");
+    else if (currentURL.endsWith("/content/portfolio")) setActive("Portfolio");
     else if (currentURL.endsWith("/content/resume")) setActive("Resume");
     else if (currentURL.endsWith("/content/contact")) setActive("Contact");
   }, [active]);
