@@ -68,7 +68,7 @@ const styles = {
 
 export default function About() {
   return (
-    <Container className="m-4">
+    <Container className="m-2">
       <Row className="justify-content-center">
         <Col lg={6} className="aboutme">
           <p>
