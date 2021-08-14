@@ -1,0 +1,33 @@
+.projectCard-wrapper {
+  margin: 2rem 0px;
+  width: 15rem;
+  height: 15rem;
+  /* min-height: 6rem; */
+}
+
+.projectCard-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  border: 0.25rem solid #f89999;
+  transition: transform 0.3s linear;
+}
+
+.projectCard-image:hover {
+  transform: scale(1.05);
+}
+
+/* .projectCard-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+} */
+
+.projectCard-title {
+  margin-top: 0.5rem;
+  font: size 1rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+}
