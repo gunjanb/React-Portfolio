@@ -60,12 +60,20 @@ export default function Sidebar() {
         </a>
       </div>
       <div className="social-icons">
-        <a href="https://www.linkedin.com/in/gunjan-bhargava/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/gunjan-bhargava/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <IconContext.Provider value={{ color: "black", size: "3rem" }}>
             <FaLinkedin />
           </IconContext.Provider>
         </a>
-        <a href="https://github.com/gunjanb" target="_black">
+        <a
+          href="https://github.com/gunjanb"
+          target="_black"
+          rel="noopener noreferrer"
+        >
           <IconContext.Provider value={{ color: "black", size: "3rem" }}>
             <FaGithubSquare />
           </IconContext.Provider>
@@ -82,7 +90,7 @@ export default function Sidebar() {
       <Link to="/" style={{ textDecoration: "none" }}>
         <IconContext.Provider
           value={{
-            color: "black",
+            color: "#f6c0ba",
             size: "2rem",
             background: "#7d0909",
             // padding: "1rem",
