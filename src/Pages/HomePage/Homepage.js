@@ -1,17 +1,14 @@
 import React from "react";
 import Particles from "react-particles-js";
-import { FaFastForward, FaChevronCircleRight } from "react-icons/fa";
+import { FaChevronCircleRight } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
 import "./homepage.css";
 
-const styles = {
-  // color: { backgroundColor: "#7d0909" },
-};
 function Homepage() {
   return (
-    <div className="" style={styles.color}>
+    <div className="">
       <div
         // styles needed for positioning
         style={{
@@ -44,7 +41,6 @@ function Homepage() {
             }}
           />
         </h2>
-        {/* <button> */}
         <Link to="/content" style={{ textDecoration: "none" }}>
           <IconContext.Provider
             value={{
@@ -57,7 +53,6 @@ function Homepage() {
             <FaChevronCircleRight />
           </IconContext.Provider>
         </Link>
-        {/* </button> */}
       </div>
 
       <Particles

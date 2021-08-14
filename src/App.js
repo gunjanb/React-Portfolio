@@ -3,15 +3,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect,
 } from "react-router-dom";
-import Homepage from "./Pages/Homepage";
-import Contentpage from "./Pages/Contentpage";
-import Typewriter from "typewriter-effect";
+import Homepage from "./Pages/HomePage/Homepage";
+import Contentpage from "./Pages/ContentPage/Contentpage";
 
-import { FaFastForward } from "react-icons/fa";
-import { IconContext } from "react-icons";
 function App() {
   return (
     <Router>

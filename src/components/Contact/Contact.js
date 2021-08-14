@@ -2,7 +2,6 @@ import { useForm } from "react-hook-form";
 // import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-import "./contact.css";
 
 const Contact = () => {
   const {
@@ -31,12 +30,12 @@ const Contact = () => {
     // Destrcture data object
     const { name, email, subject, message } = data;
     try {
-      const templateParams = {
-        name,
-        email,
-        subject,
-        message,
-      };
+      // const templateParams = {
+      //   name,
+      //   email,
+      //   subject,
+      //   message,
+      // };
 
       // await emailjs.send(
       //   process.env.REACT_APP_SERVICE_ID,

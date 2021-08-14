@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import projectdata from "./data/projectdata";
-import ProjectCard from "./ProjectCard";
+import projectdata from "../data/projectdata";
+import ProjectCard from "../ProjectCard/ProjectCard";
 import "./portfolio.css";
 
 export default function Portfolio() {

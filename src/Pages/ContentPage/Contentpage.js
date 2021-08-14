@@ -1,31 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import About from "../components/About";
-import Portfolio from "../components/Portfolio";
-import Resume from "../components/Resume";
-import Contact from "../components/Contact";
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
+import Sidebar from "../../components/SideBar/Sidebar";
+import Navbar from "../../components/Navbar/Navbar";
+import About from "../../components/About/About";
+import Portfolio from "../../components/Portfolio/Portfolio";
+import Resume from "../../components/Resume/Resume";
+import Contact from "../../components/Contact/Contact";
+import { Route, Redirect, Switch } from "react-router-dom";
 import "./contentpage.css";
 
 function Contentpage() {
   return (
-    <Container
-      fluid
-      className="pt-4 min-vh-100 content"
-      style={
-        {
-          // background:
-          //   "linear-gradient(90deg, hsla(0, 100%, 67%, 1) 0%, hsla(0, 100%, 89%, 1) 100%)",
-          // background: "#7d0909",
-        }
-      }
-    >
+    <Container fluid className="pt-4 min-vh-100 content">
       <Row className="row-height">
         {/* <div className="row m"> */}
         {/* <Col sm={12} md={3} lg={3}> */}

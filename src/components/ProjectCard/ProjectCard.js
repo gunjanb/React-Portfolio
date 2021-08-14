@@ -1,7 +1,6 @@
 import React from "react";
-import { FaGithubSquare, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import "./projectcard.css";
-import { Image } from "react-bootstrap";
 import { IconContext } from "react-icons";
 
 const ProjectCard = ({

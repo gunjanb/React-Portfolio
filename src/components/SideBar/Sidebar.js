@@ -8,8 +8,8 @@ import {
 } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import Image from "react-bootstrap/Image";
-import myimage from "../assets/ProfileImg.jpg";
-import resume from "../assets/GunjanBhargava2021.pdf";
+import myimage from "../../assets/ProfileImg.jpg";
+import resume from "../../assets/GunjanBhargava2021.pdf";
 import "./sidebar.css";
 
 const styles = {
@@ -86,7 +86,6 @@ export default function Sidebar() {
       >
         Email
       </div>
-      {/* <button> */}
       <Link to="/" style={{ textDecoration: "none" }}>
         <IconContext.Provider
           value={{
@@ -99,7 +98,6 @@ export default function Sidebar() {
           <FaChevronCircleLeft />
         </IconContext.Provider>
       </Link>
-      {/* </button> */}
     </div>
   );
 }
