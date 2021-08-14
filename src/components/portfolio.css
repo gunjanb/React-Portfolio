@@ -1,0 +1,20 @@
+.portfolio {
+  height: 72vh;
+  padding-top: 2rem;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #ff5858, #f6c0ba);
+}
+/* ff5858 */
+/* f89999 */
+.project-navbar {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
