@@ -12,6 +12,7 @@ import techblog from "../../assets/projectimages/techblog.png";
 import weatherapp from "../../assets/projectimages/weatherapp.png";
 import notetaker from "../../assets/projectimages/notetaker.png";
 import readme from "../../assets/projectimages/snapshotofterminal.jpg";
+import reactportfolio from "../../assets/projectimages/projectpage.png";
 
 const projects_data = [
   {
@@ -159,6 +160,15 @@ const projects_data = [
     techs: "Flexbox, Media Queries, JS",
     description:
       "It is a timed quiz with multiple-choice questions to check your knowledge for JS",
+  },
+  {
+    name: "React Portfolio",
+    image: reactportfolio,
+    deployed_url: "https://gunjanb.github.io/React-Portfolio",
+    github_url: "https://github.com/gunjanb/React-Portfolio",
+    category: ["React.js"],
+    techs: "React, framer motion",
+    description: "Professional portfolio",
   },
 ];
 
