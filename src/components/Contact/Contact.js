@@ -2,7 +2,25 @@ import { useForm } from "react-hook-form";
 // import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
-
+import { motion } from "framer-motion";
+const contact_variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 0.6,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      ease: "easeOut",
+    },
+  },
+};
 const Contact = () => {
   const {
     register,
@@ -52,13 +70,16 @@ const Contact = () => {
   };
 
   return (
-    <div className="ContactForm d-flex justify-content-center m-5">
-      <div className="container">
-        <div
-          className="row p-4"
-          style={{ backgroundColor: "rgb(0 0 0 / 15%)" }}
-        >
-          <div className="col-12 text-center">
+    <motion.div
+      className="ContactForm d-flex justify-content-center m-5"
+      variants={contact_variants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
+      <div className="container ">
+        <div className="row" style={{ backgroundColor: "rgb(0 0 0 / 15%)" }}>
+          <div className="col-lg-12 text-center contact-form-container">
             <div className="contactForm">
               <form
                 id="contact-form"
@@ -66,8 +87,8 @@ const Contact = () => {
                 noValidate
               >
                 {/* Row 1 of form */}
-                <div className="row formRow m-3">
-                  <div className="col-6">
+                <div className="row formRow " style={{ margin: "0.5rem" }}>
+                  <div className="col-lg-6">
                     <input
                       type="text"
                       name="name"
@@ -90,7 +111,7 @@ const Contact = () => {
                       </span>
                     )}
                   </div>
-                  <div className="col-6">
+                  <div className="col-lg-6">
                     <input
                       type="email"
                       name="email"
@@ -110,8 +131,8 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* Row 2 of form */}
-                <div className="row formRow m-3">
-                  <div className="col">
+                <div className="row formRow" style={{ margin: "0.5rem" }}>
+                  <div className="col-lg-12">
                     <input
                       type="text"
                       name="subject"
@@ -136,8 +157,8 @@ const Contact = () => {
                   </div>
                 </div>
                 {/* Row 3 of form */}
-                <div className="row formRow m-3">
-                  <div className="col">
+                <div className="row formRow" style={{ margin: "0.5rem" }}>
+                  <div className="col-lg-12">
                     <textarea
                       rows={3}
                       name="message"
@@ -160,6 +181,7 @@ const Contact = () => {
                   style={{
                     borderRadius: "0.5rem",
                     padding: ".5rem",
+                    marginBottom: "1rem",
                   }}
                 >
                   Submit
@@ -170,7 +192,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
