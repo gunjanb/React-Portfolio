@@ -1,5 +1,6 @@
 /* rest stylesheet from week 2, activity 17 */
-
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 * {
   margin: 0;
   padding: 0;
