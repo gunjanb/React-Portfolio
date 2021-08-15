@@ -6,29 +6,44 @@ import { Row, Col, Button, Container } from "react-bootstrap";
 import otherskill from "../data/otherskill.js";
 import frontendskill from "../data/frontendskill.js";
 import backendskill from "../data/backendskill.js";
-
+import { motion } from "framer-motion";
 import resume from "../../assets/GunjanBhargava2021.pdf";
 const styles = {
   atag: { textDecoration: "none", color: "black" },
-  btnwidth: { width: "fitContent" },
-  // resume: {
-  //   display: "flex",
-  //   flexDirection: "column",
-  //   // alignItems: "center",
-  //   padding: "1rem",
-  // },
 };
+const resume_variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 0.6,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      ease: "easeOut",
+    },
+  },
+};
+
 function Resume() {
   return (
-    <main>
+    <motion.main
+      variants={resume_variants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div
         // style={styles.resume}
         style={{
-          width: "fitContent",
-          textAlign: "center",
           display: "flex",
-          flexDirection: "column",
           padding: "1rem",
+          justifyContent: "center",
         }}
       >
         <Button variant="secondary" className="m-2">
@@ -68,7 +83,7 @@ function Resume() {
           </Col>
         </Row>
       </Container>
-    </main>
+    </motion.main>
   );
 }
 
