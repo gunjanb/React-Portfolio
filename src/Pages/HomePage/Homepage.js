@@ -22,10 +22,24 @@ function Homepage() {
         }}
       >
         <Link to="/"> </Link>
-        <h1 style={{ color: "black", margin: "2rem", fontSize: "2rem" }}>
+        <h1
+          style={{
+            color: "black",
+            margin: "2rem",
+            fontSize: "2rem",
+            fontFamily: "Berkshire Swash, cursive",
+          }}
+        >
           Hi !!
         </h1>
-        <h2 style={{ color: "black", margin: "2rem", fontSize: "2rem" }}>
+        <h2
+          style={{
+            color: "black",
+            margin: "2rem",
+            fontSize: "2rem",
+            fontFamily: "Berkshire Swash, cursive",
+          }}
+        >
           <Typewriter
             options={{
               strings: [
