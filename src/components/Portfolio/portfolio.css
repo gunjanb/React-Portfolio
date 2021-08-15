@@ -18,3 +18,13 @@
   cursor: pointer;
   font-weight: bold;
 }
+
+.proj-navbar-item {
+  padding: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .proj-navbar-item {
+    padding: 0.2rem;
+  }
+}
