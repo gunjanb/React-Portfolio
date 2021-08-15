@@ -56,7 +56,7 @@ function Resume() {
         </Button>
       </div>
       <Container>
-        <Row className="p-2">
+        <Row className="">
           <Col sm>
             <h4>Front-end Skills</h4>
             <ul style={{ paddingLeft: "initial" }}>
