@@ -26,14 +26,34 @@ const projects_data = [
   },
 
   {
-    name: "Code Quiz",
-    image: codequiz,
-    deployed_url: "https://github.com/gunjanb/Code-Quiz",
-    github_url: "https://gunjanb.github.io/Code-Quiz/",
+    name: "Tech Blog",
+    image: techblog,
+    deployed_url: "https://my-tech-blog-123.herokuapp.com/",
+    github_url: "https://github.com/gunjanb/Tech-Blog",
     category: ["Node.js"],
-    techs: "Flexbox, Media Queries, JS",
+    techs: "MVC, Handlebars, Sequelize",
     description:
-      "It is a timed quiz with multiple-choice questions to check your knowledge for JS",
+      "The Tech-Blog is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developer's posts.",
+  },
+  {
+    name: "kids Corner Learning Tool",
+    image: kidscorner,
+    deployed_url: "https://gunjanb.github.io/Kids-Corner-Learning-Tool/",
+    github_url: "https://github.com/gunjanb/Kids-Corner-Learning-Tool",
+    category: ["JS", "API"],
+    techs: "Third party API",
+    description:
+      "This project is geared toward young children. Its focus was to make it an educational tool in learning about the fifty states of the US.",
+  },
+  {
+    name: "Budget Tracker PWA",
+    image: pwabudgettracker,
+    deployed_url: "https://mybudget-tracker-123.herokuapp.com/",
+    github_url: "https://github.com/gunjanb/PWA-Budget-Tracker",
+    category: ["Node.js"],
+    techs: "Webmanifest, ServiceWorkers,indexedDB",
+    description:
+      "Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime even offline is more important.",
   },
 
   {
@@ -45,6 +65,26 @@ const projects_data = [
     description:
       "This application helps user to reach their fitness goals more quickly by tracking their workout progress. ",
     category: ["MongoDB"],
+  },
+  {
+    name: "Note Taker",
+    image: notetaker,
+    deployed_url: "https://agile-beyond-18161.herokuapp.com/",
+    github_url: "https://github.com/gunjanb/Note-Taker",
+    category: ["Node.js"],
+    techs: "Node.js, UUID",
+    description: "Note taker is a browser-based note taking application ",
+  },
+
+  {
+    name: "Weather Dashboard",
+    image: weatherapp,
+    deployed_url: "https://gunjanb.github.io/Weather-Dashboard/",
+    github_url: "https://github.com/gunjanb/Weather-Dashboard",
+    category: ["API"],
+    techs: "Server Side APIs,jQuery,JS",
+    description:
+      "Display weather for a city for current day as well as display forecast for next 5 days.",
   },
 
   {
@@ -77,16 +117,27 @@ const projects_data = [
     description:
       "Employee tracker is a CLI application for managing a company's employees",
   },
+  {
+    name: "Team Dashboard",
+    image: teamdashboard,
+    deployed_url: "https://youtu.be/mdKnrsRqSDU",
+    github_url: "https://github.com/gunjanb/Team-Dashboard",
+    category: ["Node.js"],
+    techs: "Node.js, Inquirer,Jest",
+    description:
+      "This is a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person",
+  },
 
   {
-    name: "kids Corner Learning Tool",
-    image: kidscorner,
-    deployed_url: "https://gunjanb.github.io/Kids-Corner-Learning-Tool/",
-    github_url: "https://github.com/gunjanb/Kids-Corner-Learning-Tool",
-    category: ["JS", "API"],
-    techs: "Third party API",
+    name: "README.md Generator",
+    image: readme,
+    deployed_url:
+      "https://drive.google.com/file/d/1uDdgXtsE7DYf_5vnGA2TK21qstSY4t-H/view",
+    github_url: "https://github.com/gunjanb/Professional-README-Generator",
+    category: ["Node.js"],
+    techs: "Node, Inquirer,template literals",
     description:
-      "This project is geared toward young children. Its focus was to make it an educational tool in learning about the fifty states of the US.",
+      "This CLI dynamically generates a professional README file from a user's input.",
   },
 
   {
@@ -99,66 +150,15 @@ const projects_data = [
     description:
       "This application generate random passwords with lengths between 8 to 128 along with special ,uppercase , lowercase and numeric characters in it",
   },
-
   {
-    name: "Budget Tracker PWA",
-    image: pwabudgettracker,
-    deployed_url: "https://mybudget-tracker-123.herokuapp.com/",
-    github_url: "https://github.com/gunjanb/PWA-Budget-Tracker",
+    name: "Code Quiz",
+    image: codequiz,
+    deployed_url: "https://github.com/gunjanb/Code-Quiz",
+    github_url: "https://gunjanb.github.io/Code-Quiz/",
     category: ["Node.js"],
-    techs: "Webmanifest, ServiceWorkers,indexedDB",
+    techs: "Flexbox, Media Queries, JS",
     description:
-      "Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime even offline is more important.",
-  },
-  {
-    name: "Team Dashboard",
-    image: teamdashboard,
-    deployed_url: "https://youtu.be/mdKnrsRqSDU",
-    github_url: "https://github.com/gunjanb/Team-Dashboard",
-    category: ["Node.js"],
-    techs: "Node.js, Inquirer,Jest",
-    description:
-      "This is a Node.js command-line application that takes in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person",
-  },
-  {
-    name: "Tech Blog",
-    image: techblog,
-    deployed_url: "https://my-tech-blog-123.herokuapp.com/",
-    github_url: "https://github.com/gunjanb/Tech-Blog",
-    category: ["Node.js"],
-    techs: "MVC, Handlebars, Sequelize",
-    description:
-      "The Tech-Blog is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developer's posts.",
-  },
-  {
-    name: "Weather Dashboard",
-    image: weatherapp,
-    deployed_url: "https://gunjanb.github.io/Weather-Dashboard/",
-    github_url: "https://github.com/gunjanb/Weather-Dashboard",
-    category: ["API"],
-    techs: "Server Side APIs,jQuery,JS",
-    description:
-      "Display weather for a city for current day as well as display forecast for next 5 days.",
-  },
-  {
-    name: "Note Taker",
-    image: notetaker,
-    deployed_url: "https://agile-beyond-18161.herokuapp.com/",
-    github_url: "https://github.com/gunjanb/Note-Taker",
-    category: ["Node.js"],
-    techs: "Node.js, UUID",
-    description: "Note taker is a browser-based note taking application ",
-  },
-  {
-    name: "README.md Generator",
-    image: readme,
-    deployed_url:
-      "https://drive.google.com/file/d/1uDdgXtsE7DYf_5vnGA2TK21qstSY4t-H/view",
-    github_url: "https://github.com/gunjanb/Professional-README-Generator",
-    category: ["Node.js"],
-    techs: "Node, Inquirer,template literals",
-    description:
-      "This CLI dynamically generates a professional README file from a user's input.",
+      "It is a timed quiz with multiple-choice questions to check your knowledge for JS",
   },
 ];
 
