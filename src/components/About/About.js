@@ -1,20 +1,44 @@
 import React from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 // import myimage from "../assets/ProfileImg2.jpg";
 import myimage from "../../assets/HalfImage.jpg";
+import { motion } from "framer-motion";
 
 const styles = {
   imgsize: {
-    height: "20rem",
-    width: "26rem",
+    height: "16rem",
+    width: "20rem",
   },
 };
-
+const about_variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 0.6,
+    },
+  },
+  exit: {
+    opacity: 0,
+    transition: {
+      ease: "easeOut",
+    },
+  },
+};
 export default function About() {
   return (
-    <Container className="m-2">
+    <motion.div
+      className="m-2"
+      variants={about_variants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <Row className="justify-content-center">
-        <Col lg={6} className="aboutme">
+        <Col lg={8} className="aboutme" style={{ padding: "1.75rem" }}>
           <p>
             Born and brought up in India.I have a Masters Degree from Indian
             Institute of Technology Delhi(IIT-D) and Bachelors of Engineering in
@@ -35,7 +59,7 @@ export default function About() {
             paint and play with my little munchkins.
           </p>
         </Col>
-        <Col lg={6} className="p-1">
+        <Col lg={4} className="p-4 mt-2">
           <Image
             src={myimage}
             className="img-fluid"
@@ -44,6 +68,6 @@ export default function About() {
           />
         </Col>
       </Row>
-    </Container>
+    </motion.div>
   );
 }
