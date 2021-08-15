@@ -5,3 +5,13 @@
 .email {
   transition: all 1s linear;
 }
+
+.my-name {
+  font-family: "Kaushan Script";
+  margin: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.social-icons:hover {
+  color: yellow;
+}
