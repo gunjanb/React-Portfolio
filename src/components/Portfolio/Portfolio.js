@@ -63,7 +63,7 @@ export default function Portfolio() {
           className="proj-navbar-item"
           onClick={() => handleFilterCategory("Node.js")}
         >
-          Node
+          Node.js
         </div>
         <div
           className="proj-navbar-item"
