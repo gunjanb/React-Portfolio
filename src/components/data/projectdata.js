@@ -13,17 +13,40 @@ import weatherapp from "../../assets/projectimages/weatherapp.png";
 import notetaker from "../../assets/projectimages/notetaker.png";
 import readme from "../../assets/projectimages/snapshotofterminal.jpg";
 import reactportfolio from "../../assets/projectimages/projectpage.png";
+import fsdc from "../../assets/projectimages/FSDC.jpg";
+import booksearch from "../../assets/projectimages/booksearch.png";
+import shopshop from "../../assets/projectimages/shopshop.png";
 
 const projects_data = [
+  {
+    name: "FSDC",
+    image: fsdc,
+    deployed_url: "https://fullstackdevelopercommunity.herokuapp.com/",
+    github_url: "https://github.com/gunjanb/Full-Stack-Developer-Community",
+    category: ["React.js", "MongoDB"],
+    techs: "MongoDB, React, Express, Node.js , Apollo, Graphql",
+    description:
+      "New developers can view videos based on the technologies they want to learn, while experienced developers can upload their own videos to teach others about a specific technology.",
+  },
   {
     name: "Art Gallery",
     image: artgallery,
     deployed_url: "https://happylittleartgallery072021.herokuapp.com/",
     github_url: "https://github.com/gunjanb/Art-Gallery",
-    category: ["Node.js"],
+    category: ["Node.js", "MySQL"],
     techs: "Express, Handlebars, Sequelize",
     description:
       "The Happy Little Art Gallery was created for budding artists who want to find inspiration from other artists, or showcase their own work or sell their own Artwork",
+  },
+  {
+    name: "kids Corner Learning Tool",
+    image: kidscorner,
+    deployed_url: "https://gunjanb.github.io/Kids-Corner-Learning-Tool/",
+    github_url: "https://github.com/gunjanb/Kids-Corner-Learning-Tool",
+    category: ["JS", "API"],
+    techs: "Third party API",
+    description:
+      "This project is geared toward young children. Its focus was to make it an educational tool in learning about the fifty states of the US.",
   },
 
   {
@@ -36,22 +59,33 @@ const projects_data = [
     description:
       "The Tech-Blog is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developer's posts.",
   },
+
   {
-    name: "kids Corner Learning Tool",
-    image: kidscorner,
-    deployed_url: "https://gunjanb.github.io/Kids-Corner-Learning-Tool/",
-    github_url: "https://github.com/gunjanb/Kids-Corner-Learning-Tool",
-    category: ["JS", "API"],
-    techs: "Third party API",
+    name: "Book Search",
+    image: booksearch,
+    deployed_url: "https://my-booksearchengine.herokuapp.com/",
+    github_url: "https://github.com/gunjanb/Book-Search",
+    category: ["React.js", "MongoDB"],
+    techs: "MongoDB, React, Express, Node.js , Apollo, Graphql",
     description:
-      "This project is geared toward young children. Its focus was to make it an educational tool in learning about the fifty states of the US.",
+      "A full-stack MERN application that allows users to search the Google Books database by book title.",
+  },
+  {
+    name: "Shop-Shop",
+    image: shopshop,
+    deployed_url: "https://my-shop-shop-01.herokuapp.com/",
+    github_url: "https://github.com/gunjanb/Shop-Shop",
+    category: ["React.js", "MongoDB"],
+    techs: "MongoDB, React, Express, Node.js , Apollo, Graphql",
+    description:
+      "A full-stack, end-to-end MERN ecommerce application using Redux to handle global state management, GraphQL and Apollo. Features Stripe payment integration.",
   },
   {
     name: "Budget Tracker PWA",
     image: pwabudgettracker,
     deployed_url: "https://mybudget-tracker-123.herokuapp.com/",
     github_url: "https://github.com/gunjanb/PWA-Budget-Tracker",
-    category: ["Node.js"],
+    category: ["Node.js", "MongoDB"],
     techs: "Webmanifest, ServiceWorkers,indexedDB",
     description:
       "Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime even offline is more important.",
@@ -82,7 +116,7 @@ const projects_data = [
     image: weatherapp,
     deployed_url: "https://gunjanb.github.io/Weather-Dashboard/",
     github_url: "https://github.com/gunjanb/Weather-Dashboard",
-    category: ["API"],
+    category: ["JS"],
     techs: "Server Side APIs,jQuery,JS",
     description:
       "Display weather for a city for current day as well as display forecast for next 5 days.",
@@ -93,7 +127,7 @@ const projects_data = [
     image: dayscheduler,
     deployed_url: "https://gunjanb.github.io/Work-Day-Scheduler/",
     github_url: "https://github.com/gunjanb/Work-Day-Scheduler",
-    category: ["Node.js"],
+    category: ["JS"],
     techs: "local storage, Momment.js,jQuery",
     description: "Work day scheduler is a daily planner to create a schedule.",
   },
@@ -103,7 +137,7 @@ const projects_data = [
     image: ecommercebackend,
     deployed_url: "https://youtu.be/bzqA3CMndlI",
     github_url: "https://github.com/gunjanb/E-Commerce-BackEnd/",
-    category: ["MySQL", "Node.js"],
+    category: ["MySQL"],
     techs: "Express, Sequelize, MySQL, Insomnia",
     description: "E-Commerce BackEnd is an e-commerce API",
   },
@@ -156,7 +190,7 @@ const projects_data = [
     image: codequiz,
     deployed_url: "https://github.com/gunjanb/Code-Quiz",
     github_url: "https://gunjanb.github.io/Code-Quiz/",
-    category: ["Node.js"],
+    category: ["JS"],
     techs: "Flexbox, Media Queries, JS",
     description:
       "It is a timed quiz with multiple-choice questions to check your knowledge for JS",
