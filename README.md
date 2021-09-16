@@ -4,7 +4,7 @@
 
 ## Description
 
-This is my simple, responsive professional portfolio demonstrating my core skills in Web develpoment. Build with React, Bootstrap, Framer motion and differnt react packages.
+This is my simple, responsive professional portfolio demonstrating my core skills in Web development. Build with React, Bootstrap, Framer motion and differnt react packages.
 Visit my online portfolio where you can read about me, can see my recent projects, resume and contact me through different means.
 
 ## Key Learning:
